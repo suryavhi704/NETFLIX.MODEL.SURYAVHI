@@ -97,6 +97,11 @@ The system allows users to:
 
 This provides a simplified Netflix-like recommendation experience.
 
+
+
+![UI](https://github.com/suryavhi704/NETFLIX.MODEL.SURYAVHI/blob/main/Screenshot%202026-02-24%20195525.png)
+
+
 ---
 
 ## 📈 Learning Outcomes

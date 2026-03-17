@@ -1,52 +1,131 @@
-# 🎯 Project Title: Netflix Data Analysis & Personalized Recommendation System using SVD (scikit-surprise) 🎬📈
+# 🎬 Netflix Movie Recommendation System
 
-# 🧠 Overview:
-Over an immersive 3-day project, I worked with a massive Netflix dataset containing crores of data points, including user ratings, movie details, and interaction histories. This project focused on data analysis and building a recommendation system that mimics how streaming platforms like Netflix understand and predict user preferences using Machine Learning.
+An end-to-end Machine Learning project that builds a **Netflix-style Movie Recommendation System** using **Collaborative Filtering with the SVD algorithm**.  
+The system predicts ratings that a user may give to unseen movies based on their past viewing history and recommends the **Top 10 movies** tailored to each user.
 
-# 📊 Project Highlights:
+The project demonstrates the **complete ML lifecycle** including data preprocessing, model training, evaluation, and deployment using an interactive web interface.
 
--- ✅ Data Handling & Integration:
+---
 
-Merged and managed two large-scale datasets: one containing detailed user-movie rating logs, and the other with metadata like titles, genres, and release years.
+## 🚀 Project Overview
 
-Implemented memory optimization techniques to handle the volume efficiently.
+Recommendation systems power platforms like **Netflix, Amazon, and Spotify** by suggesting personalized content to users.  
+This project replicates a simplified Netflix recommendation pipeline using historical customer ratings and movie metadata.
 
--- 🔍 Exploratory Data Analysis (EDA):
+The trained model analyzes user behavior and predicts how a user might rate movies they haven't watched yet, enabling personalized recommendations.
 
-Uncovered key insights into user behavior, genre popularity, temporal viewing patterns, and rating distributions.
+---
 
-Used visualization tools like Seaborn and Matplotlib to narrate data stories effectively.
+## 📂 Dataset Used
 
--- 🛠️ Feature Engineering:
+The project uses two large datasets:
 
-Processed timestamps to extract year-wise trends and user activity timelines.
+### 1️⃣ Customer Rating Dataset
+Contains:
+- Customer ID
+- Movie ID
+- Rating given by users
+- Timestamp (if available)
 
-Encoded categorical variables and ensured data consistency before model training.
+### 2️⃣ Movie Information Dataset
+Contains:
+- Movie ID
+- Movie Title
+- Release Year / Metadata
 
--- 🤖 Model Development: Collaborative Filtering using SVD
+These datasets together help build a **User–Movie interaction matrix** required for collaborative filtering.
 
-Employed Singular Value Decomposition (SVD) from the scikit-surprise library to build a personalized recommender system.
+---
 
-The model was trained on partial user ratings — users had rated some movies, but not all — and it learned hidden patterns in the user-item interaction matrix.
+## 🧠 Machine Learning Approach
 
--- ✨ How It Works:
+The system uses **Singular Value Decomposition (SVD)** from the **Collaborative Filtering technique**.
 
-The model predicts how a user might rate unseen movies by identifying latent factors in user preferences and movie characteristics.
+SVD helps to:
+- Learn latent relationships between users and movies
+- Reduce dimensionality of sparse rating matrices
+- Predict ratings for unseen movies
 
-Based on these estimated ratings, the system can recommend movies that align with the user’s taste.
+### Model Workflow
 
--- 📌 Results & Takeaways:
+1️⃣ Data Collection  
+2️⃣ Data Cleaning and Preprocessing  
+3️⃣ Creating User-Movie Rating Matrix  
+4️⃣ Training Recommendation Model using **SVD**  
+5️⃣ Model Evaluation  
+6️⃣ Predicting ratings for unseen movies  
+7️⃣ Generating **Top 10 movie recommendations** per user  
 
-Delivered accurate movie predictions using collaborative filtering without content-based features.
+---
 
-Gained deep insight into how platforms like Netflix provide personalized suggestions to millions of users.
+## ⚙️ Tech Stack
 
-Enhanced my skills in data preprocessing, matrix factorization, and scalable ML deployment. 
+**Programming**
+- Python
 
--- 🧰 Tech Stack Used:
-Python, Pandas, NumPy, Matplotlib, Seaborn, scikit-surprise, Jupyter Notebook
+**Libraries**
+- Pandas
+- NumPy
+- Scikit-Learn
+- Surprise (for SVD)
+- Gradio
 
+**Deployment**
+- Gradio Interface
+- HTML + CSS styling
 
-# 💬 Final Thoughts:
-This project was a powerful blend of big data handling, behavioral analysis, and machine learning, closely aligned with real-world recommender systems. It helped sharpen my ability to solve user-centric problems at scale — a critical skill in today’s data-driven product environments.
+---
 
+## 📊 Key Features
+
+✔ End-to-End Machine Learning Pipeline  
+✔ Collaborative Filtering based Recommendation System  
+✔ SVD-based Rating Prediction Model  
+✔ Personalized Movie Suggestions  
+✔ Interactive UI for user input  
+✔ Top 10 Movie Recommendations based on User ID  
+
+---
+
+## 🖥️ Application Interface
+
+The system allows users to:
+
+1️⃣ Enter a **User ID**  
+2️⃣ Model predicts ratings for unseen movies  
+3️⃣ Displays **Top 10 recommended movies**
+
+This provides a simplified Netflix-like recommendation experience.
+
+---
+
+## 📈 Learning Outcomes
+
+Through this project I gained hands-on experience with:
+
+- Recommendation Systems
+- Collaborative Filtering
+- Matrix Factorization (SVD)
+- Handling Large Datasets
+- Machine Learning Model Deployment
+- Building ML-based Web Interfaces
+
+---
+
+## 🔮 Future Improvements
+
+Possible enhancements include:
+
+- Hybrid Recommendation System
+- Deep Learning-based recommendation models
+- Content-based filtering using movie metadata
+- Real-time recommendation updates
+- Cloud deployment (AWS / GCP)
+
+---
+
+## 👨‍💻 Author
+
+**Suryavhi Das**
+
+If you found this project interesting, feel free to ⭐ the repository and connect with me on LinkedIn!
